@@ -1,7 +1,5 @@
 const std = @import("std");
 
-const Version = struct { commit: []u8, version: []u8 };
-
 const Forecast = struct { forecastType: []u8, forecastTimestamps: []struct { airTemperature: f32, conditionCode: []u8, forecastTimeUtc: []u8 } };
 
 pub fn main() !void {
